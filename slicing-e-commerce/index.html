@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>E-commerce UI</title>
+</head>
+
+<body class="font-sans">
+    <header class="flex justify-between items-center p-4 border-b">
+        <h1 class="text-2xl font-bold">Exclusive</h1>
+        <nav class="space-x-6">
+            <a href="#" class="text-black font-medium">Home</a>
+            <a href="#" class="text-gray-600">Contact</a>
+            <a href="#" class="text-gray-600">About</a>
+            <a href="#" class="text-gray-600">Sign Up</a>
+        </nav>
+        <div class="flex items-center space-x-4">
+            <input type="text" placeholder="What are you looking for?" class="border px-4 py-2 rounded-md">
+            <span>&#128269;</span> <!-- Search Icon -->
+            <span>&#9829;</span> <!-- Heart Icon -->
+            <span>&#128717;</span> <!-- Cart Icon -->
+        </div>
+    </header>
+    <main class="flex mt-8">
+        <aside class="w-1/4 p-4 border-r">
+            <ul class="space-y-2">
+                <li class="font-medium">Woman's Fashion &rsaquo;</li>
+                <li class="font-medium">Men's Fashion &rsaquo;</li>
+                <li>Electronics</li>
+                <li>Home & Lifestyle</li>
+                <li>Medicine</li>
+                <li>Sports & Outdoor</li>
+                <li>Baby's & Toys</li>
+                <li>Groceries & Pets</li>
+                <li>Health & Beauty</li>
+            </ul>
+        </aside>
+        <section class="w-3/4 p-4">
+            <div
+                class="relative w-full h-64 bg-black flex items-center justify-center text-white text-center rounded-lg overflow-hidden">
+                <img src="assets/img1.png" alt="iPhone 14 Series"
+                    class="absolute inset-3 w-full h-full object-cover opacity-50">
+                <div class="relative z-10">
+                    <p class="text-lg">&#63743; iPhone 14 Series</p> <!-- Apple Icon -->
+                    <h2 class="text-3xl font-bold">Up to 10% off Voucher</h2>
+                    <a href="#" class="mt-4 inline-block text-white border-b-2">Shop Now →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="p-6 mt-12">
+        <h2 class="text-xl font-bold text-red-600">Today's</h2>
+        <h1 class="text-3xl font-bold">Flash Sales</h1>
+        <div class="flex justify-center items-center space-x-2 my-4 text-center">
+            <div class="flex flex-col items-center">
+                <span id="days" class="text-xl font-bold">00</span>
+                <p class="text-sm">Days</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <span id="hours" class="text-xl font-bold">00</span>
+                <p class="text-sm">Hours</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <span id="minutes" class="text-xl font-bold">00</span>
+                <p class="text-sm">Minutes</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <span id="seconds" class="text-xl font-bold">00</span>
+                <p class="text-sm">Seconds</p>
+            </div>
+        </div>
+        <div class="grid grid-cols-4 gap-4 mb-10">
+            <div class="border p-4 text-center">
+                <span class="bg-red-500 text-white px-2 py-1 text-sm">-40%</span>
+                <img src="assets/stick.png" alt="" class="w-full h-40 ">
+                <p>HAVIT HV-G92 Gamepad</p>
+                <p class="text-red-500 font-bold">$120 <span class="line-through text-gray-500">$160</span></p>
+                <p>⭐⭐⭐⭐⭐ (88)</p>
+                <button class="bg-black text-white px-4 py-2 mt-2">Add To Cart</button>
+            </div>
+            <div class="border p-4 text-center">
+                <span class="bg-red-500 text-white px-2 py-1 text-sm">-35%</span>
+                <img src="assets/keyboard.png" alt="" class="w-full h-40 object-cover">
+                <p>AK-900 Wired Keyboard</p>
+                <p class="text-red-500 font-bold">$960 <span class="line-through text-gray-500">$1160</span></p>
+                <p>⭐⭐⭐⭐ (75)</p>
+                <button class="bg-black text-white px-4 py-2 mt-2">Add To Cart</button>
+            </div>
+            <div class="border p-4 text-center">
+                <span class="bg-red-500 text-white px-2 py-1 text-sm">-30%</span>
+                <img src="assets/lcd.png" alt="" class="w-full h-40 object-cover">
+                <p>IPS LCD Gaming Monitor</p>
+                <p class="text-red-500 font-bold">$370 <span class="line-through text-gray-500">$400</span></p>
+                <p>⭐⭐⭐⭐⭐ (99)</p>
+                <button class="bg-black text-white px-4 py-2 mt-2">Add To Cart</button>
+            </div>
+            <div class="border p-4 text-center">
+                <span class="bg-red-500 text-white px-2 py-1 text-sm">-25%</span>
+                <img src="assets/kursi.png" alt="" class="w-full h-40">
+                <p>S-Series Comfort Chair</p>
+                <p class="text-red-500 font-bold">$375 <span class="line-through text-gray-500">$400</span></p>
+                <p>⭐⭐⭐⭐ (99)</p>
+                <button class="bg-black text-white px-4 py-2 mt-2">Add To Cart</button>
+            </div>
+        </div>
+        <div class="text-center mt-6 mb-10">
+            <button class="bg-red-500 text-white px-6 py-2 text-lg">View All Products</button>
+        </div>
+    </section>
+
+    <section class="p-6 mt-12 flex justify-around text-center border-t">
+        <div>
+            <img src="assets/Services.png" alt="Delivery Icon" class="w-12 mx-auto">
+            <h3 class="font-bold mt-2">FREE AND FAST DELIVERY</h3>
+            <p class="text-sm text-gray-600">Free delivery for all orders over $140</p>
+        </div>
+        <div>
+            <img src="assets/cs.png" alt="Customer Service Icon" class="w-12 mx-auto">
+            <h3 class="font-bold mt-2">24/7 CUSTOMER SERVICE</h3>
+            <p class="text-sm text-gray-600">Friendly 24/7 customer support</p>
+        </div>
+        <div>
+            <img src="assets/money.png" alt="Money Back Icon" class="w-12 mx-auto">
+            <h3 class="font-bold mt-2">MONEY BACK GUARANTEE</h3>
+            <p class="text-sm text-gray-600">We return money within 30 days</p>
+        </div>
+    </section>
+
+    <section class="p-6 mt-12">
+        <div class="flex items-center space-x-2 text-red-600 font-bold">
+            <div class="w-4 h-6 bg-red-500 rounded"></div>
+            <span>Featured</span>
+        </div>
+        <h2 class="text-3xl font-bold mt-2">New Arrival</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6">
+            <div class="relative group">
+                <img src="assets/ps5.png" alt="PlayStation 5" class="w-full rounded-lg">
+            </div>
+            <div class="relative group">
+                <img src="assets/women-collection.png" alt="Women's Collections" class="w-full rounded-lg">
+                <div class="absolute bottom-4 left-4 text-white">
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="relative group">
+                    <img src="assets/speakers.png" alt="Speakers" class="w-full rounded-lg">
+                    <div class="absolute bottom-4 left-4 text-white">
+                    </div>
+                </div>
+                <div class="relative group">
+                    <img src="assets/parfume.png" alt="Perfume" class="w-full rounded-lg">
+                    <div class="absolute bottom-4 left-4 text-white">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-white p-10 mt-12">
+        <div class="grid grid-cols-4 gap-4">
+            <div>
+                <h2 class="font-bold text-lg">Exclusive</h2>
+                <p class="mt-2 text-gray-400">Get 10% off your first order</p>
+                <form id="subscription-form" class="flex mt-2">
+                    <input type="email" id="email" name="user_email" placeholder="Enter your email"
+                        class="p-2 text-black rounded-l-md w-full" required>
+                    <button type="submit" id="subscribe-btn" class="bg-red-500 px-4 py-2 rounded-r-md">Subscribe</button>
+                </form>
+            </div>
+            
+            <!-- Sertakan library EmailJS -->
+            <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+            <script>
+                // Inisialisasi EmailJS dengan Public Key Anda
+                (function(){
+                    emailjs.init("_Mz4CIkItQRdbL_kj");
+                })();
+            
+                // Tambahkan event listener untuk form submission
+                document.getElementById('subscription-form').addEventListener('submit', function(event) {
+                    event.preventDefault();
+            
+                    // Kirim email menggunakan EmailJS
+                    emailjs.sendForm("service_8y9o1sl", "template_ou6y66h", this)
+                    .then(function(response) {
+                        alert("Subscription successful! Check your email.");
+                    }, function(error) {
+                        alert("Failed to subscribe. Please try again.");
+                        console.log("ERROR:", error);
+                    });
+                });
+            </script>
+            
+            <div>
+                <h3 class="font-bold">Support</h3>
+                <p class="mt-2 text-gray-400">111 Bijoy sarani, Dhaka, Indonesia.</p>
+                <p class="text-gray-400">exclusive@gmail.com</p>
+                <p class="text-gray-400">+88015-88888-9999</p>
+            </div>
+            <div>
+                <h3 class="font-bold">Account</h3>
+                <ul class="mt-2 space-y-2 text-gray-400">
+                    <li>My Account</li>
+                    <li>Login / Register</li>
+                    <li>Cart</li>
+                    <li>Wishlist</li>
+                    <li>Shop</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold">Quick Link</h3>
+                <ul class="mt-2 space-y-2 text-gray-400">
+                    <li>Privacy Policy</li>
+                    <li>Terms Of Use</li>
+                    <li>FAQ</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex justify-between items-center mt-8">
+            <div class="flex space-x-4">
+                <a href="#"><img src="assets/facebook.png" alt="Facebook" class="w-6"></a>
+                <a href="#"><img src="assets/twitter.png" alt="Twitter" class="w-6"></a>
+                <a href="#"><img src="assets/instagram.png" alt="Instagram" class="w-6"></a>
+                <a href="#"><img src="assets/linkedin.png" alt="LinkedIn" class="w-6"></a>
+            </div>
+            <div>
+                <img src="assets/qr-code.png" alt="QR Code" class="w-16">
+                <div class="flex mt-2 space-x-2">
+                    <img src="assets/google-play.png" alt="Google Play" class="w-24">
+                    <img src="assets/app-store.png" alt="App Store" class="w-24">
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-8">
+            <p class="text-gray-400">&copy; Copyright Rimel 2022. All rights reserved</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
